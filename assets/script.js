@@ -4,7 +4,7 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// variables for password
+// Variables for password
 var UpperCase = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
 var LowerCase = "abcdefghijklmnopqrstuvxyz";
 var SpecialChar= "`~!@#$%^&*()_+{}|[]:<>?,./'";
@@ -21,30 +21,30 @@ function generatePassword() {
     alert("Please enter the recommended amount of characters.");
   }
   else{
-    // messages to determine wanted characters
+    // Messages to determine wanted characters
     var askUpperCase= confirm("Would you like to use upper case letters?");
     var askLowerCase = confirm("Would you like to use lower case letters?");
     var askSpecialChar = confirm("Would you like to use special characters?");
     var askNumbers = confirm("Would you like to use numbers?");
     
-    //This is if they request to add uppercase 
+    // This is if they request to add uppercase 
     if(askUpperCase){
-      // appends uppercase into wantedChars
+      // Appends uppercase into wantedChars
       wantedChars += UpperCase;
     }
     if(askLowerCase){
-      // appends lowercase into wantedChars
+      // Appends lowercase into wantedChars
       wantedChars += LowerCase;
     }
     if(askSpecialChar){
-      // appends special characters into wantedChars
+      // Appends special characters into wantedChars
       wantedChars += SpecialChar;
     }
     if(askNumbers){
-      // appends numbers into wantedChars
+      // Appends numbers into wantedChars
       wantedChars += Numbers;
     }
-    // checks if any wanted characters was choosen
+    // Checks if any wanted characters was choosen
     if(wantedChars.length ===0){
       alert("Please select at least 1 character types.");
     }
