@@ -16,7 +16,7 @@ function generatePassword() {
   var wantedChars= "";
 
   // Message to determine length of password
-  var length= prompt("Please choose between 8 and 128 for you password.");
+  var length= prompt("Please choose between 8 and 128 for your password.");
   if(length <8 || length > 128){
     alert("Please enter the recommended amount of characters.");
   }

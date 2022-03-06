@@ -3,7 +3,7 @@
 Description
 
 This challenge is to create a password generator. 
-The purposes of this is to use JavaScript to generate a random password that is requested from the user.
+The purpose of this is to use JavaScript to generate a random password that is requested from the user.
 
 
 Screenshot
